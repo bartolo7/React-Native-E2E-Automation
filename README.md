@@ -17,12 +17,17 @@ First things first, Accessbility label (AL) must be implemented in the React-Nat
 What things you need to install the software and how to install them
 
 ```
-Yarn: https://yarnpkg.com/lang/en/
-Node
-React-Native-App with Accessibility Labels
-Appium Desktop and Appium Server: https://appium.io
+1. Yarn
+   https://yarnpkg.com/lang/en/
+2. Node
+3. React-Native-App with Accessibility Labels
+4. Appium Desktop and Appium Server
+   https://appium.io
 
 ```
+### React-Native Repository Utils
+
+### React-Native Componenent Example 
 
 ### Installing
 
