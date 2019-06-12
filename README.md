@@ -4,7 +4,7 @@ Step by step guide to implement E2E Automation for React-Native apps with Javasc
 
 ## 1. Getting Started
 
-First things first, Accessbility label must be implemented in the React-Native apps repository in order to find the elements with the Appium Desktop Inspector.
+First things first, Accessbility label (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. When the AL are in place, you can use the Appium Desktop Inspector to verify them.
 
 ### 1.1 Prerequisites
 
@@ -17,7 +17,11 @@ First things first, Accessbility label must be implemented in the React-Native a
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Yarn: https://yarnpkg.com/lang/en/
+Node
+React-Native-App with Accessibility Labels
+Appium Desktop and Appium Server: https://appium.io
+
 ```
 
 ### Installing
