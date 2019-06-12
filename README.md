@@ -2,9 +2,15 @@
 
 Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium and Jest.
 
-## 1. Getting Started
+## Acknowledgement
 
-First things first, Accessbility label (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. When the AL are in place, you can use the Appium Desktop Inspector to verify them.
+First things first, Accessbility labels (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. For instance, text label, button, list and so on must have AL for the automation to work.  
+
+Then the IOS .app and Android .apk must be build with AL for testing purpose. The IOS .app will run in the Simulator and the Android .apk in the Emulator. 
+
+With an .app and .apk built with AL, you can use the Appium Desktop Inspector to verify them and start writing code in the E2E framework describe below.
+
+## 1. Getting Started
 
 ### 1.1 Prerequisites
 
