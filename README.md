@@ -2,11 +2,15 @@
 
 Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium and Jest.
 
-## Getting Started
+## 1. Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+First things first, Accessbility label must be implemented in the React-Native apps repository in order to find the elements with the Appium Desktop Inspector.
 
+### 1.1 Prerequisites
 
+### 1.2 React-Native Repository Utils
+
+### 1.3 React-Native Componenent Example 
 
 ### Prerequisites
 
