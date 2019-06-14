@@ -2,8 +2,8 @@
   "scripts": {
     "e2eTest": "jest --detectOpenHandles",
     "startAppium": "appium &.",
-    "runAndroid": "./scripts/runAndroid.sh",
-    "runIOS": "SIM=\"iPhone 8 (12.2)\" ./scripts/runIOS.sh",
+    "runAndroid": "./script/runAndroid.sh",
+    "runIOS": "SIM=\"iPhone 8 (12.2)\" ./script/runIOS.sh",
     "testAndroidDevice": "DEVICE=\"android.device\" jest",
     "testAndroid": "DEVICE=\"android.emulator\" yarn e2eTest",
     "testIOSDevice": "DEVICE=\"iphone.device\" jest",
