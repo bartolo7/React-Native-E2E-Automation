@@ -9,7 +9,7 @@ const txtUserName = () => elementUtil.getElementByAccessibilityId(input.USERNAME
 
 const txtPassword = () => elementUtil.getElementByAccessibilityId(input.PASSWORD);
 
-const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN_UP);
+const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
 
 
 export default {

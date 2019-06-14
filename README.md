@@ -4,7 +4,7 @@ Step by step guide to implement E2E Automation for React-Native apps with Javasc
 
 ## Acknowledgement
 
-First things first, Accessbility Labels (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. For instance, text labels, buttons, list and so on must have AL for the automation to work.  
+First things first, Accessbility Labels (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. For instance, text labels, buttons, list and so on must have AL for the automation to work. You can read more here: https://facebook.github.io/react-native/docs/accessibility 
 
 Then the IOS .app and Android .apk must be build with AL for testing purpose. The IOS .app will run in the Simulator and the Android .apk in the Emulator. 
 
