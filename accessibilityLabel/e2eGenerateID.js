@@ -1,5 +1,31 @@
 export const setAccessibilityProps = id => process.env.GENERATE_AL ? { accessibilityLabel: id } : {};
 
+/* Example 1:
+<Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>
+        {title}
+</Text>*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Example 2:
+  <TouchableOpacity onPress={this._onPressButton} {...setAccessibilityProps('LOGIN')}>
+      <Image
+        style={styles.button}
+        source={require('./myButton.png')}
+      />
+  </TouchableOpacity>*/
+  
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Example 3:
+<Button
+    disabled={disabled}
+    semiBold
+    title={editing ? t('EDIT_DONE') : t('EDITING')}
+    onPress={onPress}
+    {...setAccessibilityProps(accessibilityId)}
+    /> */
+
 
 
 export const setAccessibilityPropsArray = id => process.env.GENERATE_AL ? { accessibilityLabels: id } : {};
@@ -23,15 +49,15 @@ renderSections = () => {
       accessibilityLabel: getAL('SECTION_1'),
     },
   ];
-
 }*/
 
 export const isNotAccessible = () => process.env.GENERATE_AL ? { accessible: false } : {};
 
+
+
 export default {
   setAccessibilityProps,
   setAccessibilityPropsArray,
-  accessibilityLabel,
-  testProperties,
+  getAL,
   isNotAccessible
 };
