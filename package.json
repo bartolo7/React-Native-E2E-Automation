@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "e2eTest": "jest --detectOpenHandles",
+    "startAppium": "appium &.",
+    "runAndroid": "./scripts/runAndroid.sh",
+    "runIOS": "SIM=\"iPhone 8 (12.2)\" ./scripts/runIOS.sh",
+    "testAndroidDevice": "DEVICE=\"android.device\" jest",
+    "testAndroid": "DEVICE=\"android.emulator\" yarn e2eTest",
+    "testIOSDevice": "DEVICE=\"iphone.device\" jest",
+    "testIOS": "DEVICE=\"iphone.simulator\" yarn e2eTest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-jest": "^23.6.0",
+    "jest": "^24.5.0",
+    "jest-html-reporter": "^2.4.4",
+    "lint-staged": "8.1.0",
+    "pretty-quick": "1.10.0"
+  },
+  "dependencies": {
+    "appium": "^1.12.1",
+    "moment": "^2.24.0",
+    "wd": "^1.11.1"
+  }
+}
