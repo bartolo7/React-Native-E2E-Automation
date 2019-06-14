@@ -8,7 +8,7 @@ import {
   profileAction,
   accountOverview,
   order
-} from "./../screens";
+} from "../screens";
 import { user, asserter, constant } from "../../utils";
 
 const { user1, user2 } = user;
