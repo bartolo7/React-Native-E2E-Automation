@@ -1,3 +1,6 @@
+
+
+
 export const setAccessibilityProps = id => process.env.GENERATE_AL ? { accessibilityLabel: id } : {};
 
 /* Example 1:
