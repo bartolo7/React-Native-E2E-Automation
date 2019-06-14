@@ -14,7 +14,7 @@ export const setAccessibilityProps = id => process.env.GENERATE_AL ? { accessibi
         source={require('./myButton.png')}
       />
   </TouchableOpacity>*/
-  
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* Example 3:
@@ -52,7 +52,7 @@ renderSections = () => {
 }*/
 
 export const isNotAccessible = () => process.env.GENERATE_AL ? { accessible: false } : {};
-
+/* Example: use together with setAccessibilityProps() to make clickable component down the hierarchy */
 
 
 export default {
