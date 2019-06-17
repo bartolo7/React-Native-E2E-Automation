@@ -32,9 +32,10 @@ What things you need to install the software and how to install them
 4. Appium Desktop and Appium Server
    https://appium.io
 5. Android Studio
+6. Xcode
 
 ```
-### React-Native Repository Utils and Accessbility Component Example
+### React-Native Repository Utils and Component with Accessbility Label
 The components in the React-Native apps repository must have AL for the automation to work. 
 
 1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
