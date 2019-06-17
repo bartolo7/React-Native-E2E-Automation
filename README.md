@@ -41,7 +41,7 @@ The components in the React-Native apps repository must have AL for the automati
 1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
 2. Install dotenv: https://www.npmjs.com/package/dotenv
 3. Add the environmental variable "GENERATE_AL=true" in the .env file 
-4. Choose a component and add the accessibilityLabels property. For example:
+4. Choose a component and add the accessibilityLabels property. The file has several examples and this is one of them:
    ``` 
    <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
    ```
