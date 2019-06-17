@@ -44,7 +44,6 @@ The components in the React-Native apps repository must have AL for the automati
 4. Choose a component and add the accessibilityLabels property. For example:
    ``` 
    <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
-   
    ```
 
    
