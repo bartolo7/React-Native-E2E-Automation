@@ -42,7 +42,9 @@ The components in the React-Native apps repository must have AL for the automati
 2. Install dotenv: https://www.npmjs.com/package/dotenv
 3. Add the environmental variable "GENERATE_AL=true" in the .env file 
 4. Choose a component and add the accessibilityLabels property. For example:
-   ``` <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
+   ``` 
+   <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
+   
    ```
 
    
