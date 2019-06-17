@@ -45,8 +45,6 @@ The components in the React-Native apps repository must have AL for the automati
    ``` 
    <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
    ```
-
-   
 5. Build-up the .apk and .app following point 1.3
 
 ### Build .apk and .app
