@@ -5,9 +5,11 @@
     "runAndroid": "./script/runAndroid.sh",
     "runIOS": "SIM=\"iPhone 8 (12.2)\" ./script/runIOS.sh",
     "testAndroidDevice": "DEVICE=\"android.device\" jest",
+    "testAndroid:singleTest": "DEVICE=\"android.emulator\" yarn e2eTest --testMatch=\"<rootDir>/__test__/e2e/$TEST*.test.js\"",
     "testAndroid": "DEVICE=\"android.emulator\" yarn e2eTest",
     "testIOSDevice": "DEVICE=\"iphone.device\" jest",
-    "testIOS": "DEVICE=\"iphone.simulator\" yarn e2eTest"
+    "testIOS": "DEVICE=\"iphone.simulator\" yarn e2eTest",
+    "testIOS:singleTest": "DEVICE=\"iphone.simulator\" yarn e2eTest --testMatch=\"<rootDir>/__test__/e2e/$TEST*.test.js\""
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
