@@ -14,9 +14,11 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ### 1.1 Prerequisites
 
-### 1.2 React-Native Repository Utils
+### 1.2 React-Native Repository Utils and Componenent Example 
 
-### 1.3 React-Native Componenent Example 
+### 1.3 Build .apk and .app
+
+### 1.4 Start Appium Desktop Inspector to verify the accessibility labels 
 
 ### Prerequisites
 
@@ -29,11 +31,19 @@ What things you need to install the software and how to install them
 3. React-Native-App with Accessibility Labels
 4. Appium Desktop and Appium Server
    https://appium.io
+5. Android Studio
 
 ```
-### React-Native Repository Utils
+### React-Native Repository Utils and Accessbility Component Example
+The components in the React-Native apps repository must have AL for the automation to work. 
 
-### React-Native Componenent Example 
+1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
+2. Install dotenv : https://www.npmjs.com/package/dotenv
+3. Add the environmental variable "GENERATE_AL = true" in the .env file 
+4. Choose a component and add the accessibilityLabels property. For example:
+   <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
+5. Build-up the .apk and .app 
+
 
 ### Installing
 
