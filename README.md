@@ -38,11 +38,11 @@ What things you need to install the software and how to install them
 The components in the React-Native apps repository must have AL for the automation to work. 
 
 1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
-2. Install dotenv : https://www.npmjs.com/package/dotenv
-3. Add the environmental variable "GENERATE_AL = true" in the .env file 
+2. Install dotenv: https://www.npmjs.com/package/dotenv
+3. Add the environmental variable "GENERATE_AL=true" in the .env file 
 4. Choose a component and add the accessibilityLabels property. For example:
    <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
-5. Build-up the .apk and .app 
+5. Build-up the .apk and .app following point 1.3
 
 
 ### Installing
