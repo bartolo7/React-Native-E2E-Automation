@@ -14,7 +14,7 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ### 1.1 Prerequisites
 
-### 1.2 Add e2eGenerateID.js file to your React-Native Repository Utils and start adding Accessiblity Label (AL)
+### 1.2 Add file to React-Native Repository Utils and start adding AL
 
 ### 1.3 Build .apk and .app
 
@@ -35,7 +35,7 @@ What things you need to install the software and how to install them
 6. Xcode
 
 ```
-### Add e2eGenerateID.js file to your React-Native Repository Utils and start adding Accessiblity Label (AL)
+### Add file to React-Native Repository Utils and start adding AL
 The components in the React-Native apps repository must have AL for the automation to work. 
 
 1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
