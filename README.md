@@ -35,7 +35,7 @@ What things you need to install the software and how to install them
 6. Xcode
 
 ```
-### Add file to React-Native Repository Utils and start adding AL
+### Add file to React-Native repository utils folder and start adding AL to react-component
 The components in the React-Native apps repository must have AL for the automation to work. 
 
 1. Add the file e2eGenerateID.js to utils folder in your React-Native App repository
