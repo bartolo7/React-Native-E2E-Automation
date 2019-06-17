@@ -1,3 +1,5 @@
+// HOW TO GENERATE ACCESSIBILITY LABELS (AL) IN YOUR REACT-NATIVE APP BY EXAMPLES
+
 export const setAccessibilityProps = id => process.env.GENERATE_AL ? { accessibilityLabel: id } : {};
 
 /* Example 1:
