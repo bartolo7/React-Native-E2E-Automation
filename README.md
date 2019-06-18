@@ -102,15 +102,18 @@ Now with the elements located, it is time to start building the automationFramew
 
 ## Start building the automation framework
 
-The automationFramework folder contains two more folders. The e2e folder is where you will safe all the e2e automation test and the screen is the framework.
+The automationFramework folder follows a modular architecture and contains two more folders. The e2e folder is where you will safe all the e2e automation test and the screen is the framework.
 
-The screen folder has two examples and let´s look at one of them. The pageExampleLogin represent the loginPage for the app and that page will have four .js files.
+The screen folder has two examples and let´s look at one of them. The pageExampleLogin represent the loginPage for the app and that page has four .js files.
 
 ```
 testID.js: where AL are specfied as json
 screenObject.js = where all the components in the page like text labels, buttons, list , icons are specified
 action.js: where user actions functions are written, for instance, login
+index.js: where we export all the files of the folder
 ```
+
+
 
 ### Break down into end to end tests
 
