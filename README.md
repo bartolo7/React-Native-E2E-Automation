@@ -62,10 +62,11 @@ The point is a bit generic as I do not know the architecture of your React-Nativ
 
 3. Build with .apik and .app with this command:
 
-   ```
-   yarn build-android 
-   yarn build-ios
-   ```
+```
+yarn build-android 
+yarn build-ios
+```
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
