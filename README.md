@@ -114,7 +114,6 @@ index.js: where we export all the files of the folder
 ```
 
 
-
 ### Break down into end to end tests
 
 Explain what these tests test and why
