@@ -48,7 +48,7 @@ The components in the React-Native apps repository must have AL for the automati
 
 ### Build .apk and .app
 
-The point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommet you to checkout Fastlane: https://docs.fastlane.tools/
+The point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommed you to checkout Fastlane: https://docs.fastlane.tools/
 
 1. Add the two scripts below to the package.json in your React-Native repo:
 
