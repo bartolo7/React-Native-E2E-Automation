@@ -72,7 +72,7 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 
 1. Start Appium Desktop and click Start Server
 2. Then click search button "Start Inspector Session"
-3. Add desired capabilities, see two examples below: 
+3. Add desired capabilities, see two examples below: jj
 
 ```
 Give the example
