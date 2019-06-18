@@ -44,13 +44,20 @@ The components in the React-Native apps repository must have AL for the automati
    ``` 
    <Text {...setAccessibilityProps(accessibilityLabel)} color={color} semiBold style={styles.label}>{title}</Text>
    ```
-5. Build-up the .apk and .app following point 1.3
+5. Build-up the .apk and .app following next point
 
 ### Build .apk and .app
 
+The point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommet you to checkout Fastlane: https://docs.fastlane.tools/
+
+1. Add the two scripts below to the package.json in your React-Native repo:
+
     "build-android": "./scripts/buildAppLocal.sh android",
     "build-ios": "./scripts/buildAppLocal.sh ios",
-    
+
+2. Edit the script buildAppLocal.sh by adding the info <your_workspace_name> and <your_scheme_name> 
+
+3. Build by running in the command line: yarn build-android or yarn build-ios
 
 ### Installing
 
