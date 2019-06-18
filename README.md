@@ -20,6 +20,8 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ### 1.4 Start Appium Desktop Inspector to verify the accessibility labels
 
+### 1.5 Start building the automation framework
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
@@ -74,6 +76,7 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 2. Then click search button "Start Inspector Session"
 3. Add desired capabilities, see two examples below.
 4. Start Session
+5. In the Inspector you will see the hierarchy of elements and their attributes 
 
 ```
 {
@@ -95,18 +98,19 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 
 
 ```
+Now with the elements located, it is time to start building the automationFramework. 
 
-And repeat
+## Start building the automation framework
+
+The automationFramework folder contains two more folders. The e2e folder is where you will safe all the e2e automation test and the screen is the framework.
+
+The screen folder has two examples and let´s look at one of them. The pageExampleLogin represent the loginPage for the app and that page will have four .js files.
 
 ```
-until finished
+testID.js: where AL are specfied as json
+screenObject.js = where all the components in the page like text labels, buttons, list , icons are specified
+action.js: where user actions functions are written, for instance, login
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
@@ -115,6 +119,11 @@ Explain what these tests test and why
 ```
 Give an example
 ```
+
+```
+until finished
+```
+
 
 ### And coding style tests
 
