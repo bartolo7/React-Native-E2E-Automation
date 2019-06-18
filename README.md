@@ -27,7 +27,7 @@ What things you need to install the software and how to install them
 ```
 1. Yarn https://yarnpkg.com/lang/en/
 2. Node
-3. React-Native-App with Accessibility Labels
+3. React-Native-App 
 4. Appium Desktop and Appium Server https://appium.io
 5. Android Studio
 6. Xcode
