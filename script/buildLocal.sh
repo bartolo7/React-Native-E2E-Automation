@@ -7,7 +7,7 @@ fi
 
 if [ ! -z $1 ] && [[ $1 == "android" ]]; then
     echo "Building Android"
-    RCT_METRO_PORT=8086 GENERATE_AL=true ./android/gradlew gradlew assembleRelease -p android/
+    RCT_METRO_PORT=8086 GENERATE_AL=true ./android/gradlew assembleRelease -p android/
    
 fi
 
