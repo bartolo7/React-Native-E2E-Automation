@@ -51,7 +51,6 @@ The components in the React-Native apps repository must have AL for the automati
     ```
     "build-android": "./scripts/buildAppLocal.sh android",
     "build-ios": "./scripts/buildAppLocal.sh ios",
-
     ```
 
 ### Installing
