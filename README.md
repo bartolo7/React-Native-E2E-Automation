@@ -72,10 +72,28 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 
 1. Start Appium Desktop and click Start Server
 2. Then click search button "Start Inspector Session"
-3. Add desired capabilities, see two examples below: jj
+3. Add desired capabilities, see two examples below.
+4. Start Session
 
 ```
-Give the example
+{
+  "deviceName": "Android Emulator",
+  "platformName": "Android",
+  "app": "<write-path>.apk",
+  "noReset": "true"
+}
+
+{
+  "deviceName": "iPhone X",
+  "platformName": "ios",
+  "app": "<write-path>.app",
+  "automationName": "XCUITest",
+  "platformVersion": "12.2",
+  "autoLaunch": false,
+  "noReset": "true"
+}
+
+
 ```
 
 And repeat
