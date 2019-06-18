@@ -60,18 +60,19 @@ The point is a bit generic as I do not know the architecture of your React-Nativ
 
 2. Edit the script buildAppLocal.sh by adding the info <your_workspace_name> and <your_scheme_name>
 
-3. Build with .apik and .app with this command:
+3. Build with .apik and .app with this command
 
 ```
 yarn build-android 
 yarn build-ios
 ```
+Up to this point the guide is bit abstract and now I will give for granted that you succeed adding AL and building the apps for automation. 
 
-### Installing
+### Start Appium Desktop Inspector to verify the accessibility labels
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+1. Start Appium Desktop and click Start Server
+2. Then click search button "Start Inspector Session"
+3. Add desired capabilities, see two examples below: 
 
 ```
 Give the example
