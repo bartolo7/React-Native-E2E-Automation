@@ -147,6 +147,18 @@ const testID = {
 
 ```
 
+#### 1.5.2 Add ScreenObject
+
+In the ScreenObject file add the elements in the page. For instance, the login page may have two input text labels and a button.
+
+```
+const txtUserName = () => elementUtil.getElementByAccessibilityId(input.USERNAME);
+
+const txtPassword = () => elementUtil.getElementByAccessibilityId(input.PASSWORD);
+
+const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
+
+```
 
 
 ### Break down into end to end tests
