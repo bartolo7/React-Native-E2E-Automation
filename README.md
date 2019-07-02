@@ -28,7 +28,7 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
   #### 1.5.3 Add Action
 
-  #### 1.5.4 Index
+  #### 1.5.4 Add Index
 
 ### 1.6 Start building the E2E automaiton test
 
@@ -186,9 +186,44 @@ const loginUsernamePassword = async (user) => {
 export default { loginUsernamePassword };
 
 ```
+
+#### 1.5.3 Add Index 
+
+Import and export testID, screenObject and action for each page in the index.js file inside the page folder. See example below: 
+
+````
+import testID from './testID';
+import screenObject from './screenObject';
+import action from './action';
+
+export { testID, screenObject, action };
+
+````
+
+Import and export 
+
+In the screen folder, there is index.js file to import and export all the page folder, see example below. Hence, they can be accessed from the e2e folder where the automaiton test are written. 
+
+`````
+import { screenObject as login, action as loginAction } from './pageExampleLogin';
+import { screenObject as menu } from './pageExampleMenu';
+
+
+export {
+  login,
+  menu,
+  loginAction
+};
+
+````
+
+
+
+
 ### 1.6 Start building the E2E automaiton test
 
-
+````
+````
 
 ### Break down into end to end tests
 
