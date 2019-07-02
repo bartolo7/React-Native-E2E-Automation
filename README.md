@@ -165,7 +165,7 @@ const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
 
   #### 1.5.3 Add Action
 
-In the Action file code the most commont action for the page. For instance, the login will be perform serveral times so create a function for the login. 
+In the Action file write functions with the most commont actions for the page. For instance, the login will be perform serveral times so create a function for the login. 
 
 ```
 import screenObject from './screenObject';
