@@ -53,7 +53,7 @@ node () {
                 dir ("${app_repo}/<write-your-folder-name>"){
                     lock(resources: 'JSBundler'){
                         sh "yarn"
-                        sh "yarn project-init"
+                        sh "yarn set-env test"
                     }
                 } 
             }    
