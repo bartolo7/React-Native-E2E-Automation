@@ -1,6 +1,6 @@
 # {React-Native-E2E-Automation}
 
-Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium and Jest.
+Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins.
 
 ## Acknowledgement
 
@@ -161,6 +161,33 @@ const txtPassword = () => elementUtil.getElementByAccessibilityId(input.PASSWORD
 const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
 
 ```
+
+
+  #### 1.5.3 Add Action
+
+In the Action file code the most commont action for the page. For instance, the login will be perform serveral times so create a function for the login. 
+
+```
+import screenObject from './screenObject';
+
+const { txtUserName, txtPassword, btnLogin } = screenObject;
+
+const loginUsernamePassword = async (user) => {
+  const { name, password } = user;
+  await txtUserName()
+    .click()
+    .sendKeys(name);
+  await txtPassword()
+    .click()
+    .sendKeys(password);
+  await btnLogin().click();
+};
+
+export default { loginUsernamePassword };
+
+```
+### 1.6 Start building the E2E automaiton test
+
 
 
 ### Break down into end to end tests
