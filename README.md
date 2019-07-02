@@ -151,6 +151,9 @@ const testID = {
 
 In the ScreenObject file add the elements in the page. For instance, the login page may have two input text labels and a button. The screen is the page so it is easy to verify the location when navigating from page to page. 
 
+In the file, the elementUtil.js utility is used to find the elements. It contains functions to finds elements in Android an IOS, you can read more about them here: https://github.com/admc/wd/blob/master/doc/api.md 
+
+
 ```
 const screen = () => elementUtil.getElementByAccessibilityId(SCREEN);
 
@@ -216,9 +219,6 @@ export {
 };
 
 ````
-
-
-
 
 ### 1.6 Start building the E2E automaiton test
 
