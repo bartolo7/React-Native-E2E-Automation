@@ -10,35 +10,33 @@ Then the IOS .app and Android .apk must be build with AL for testing purpose. Th
 
 With an .app and .apk built with AL, you can use the Appium Desktop Inspector to verify them and start writing code in the E2E framework describe below.
 
-## 1. Getting Started
 
-### 1.1 Prerequisites
+## 1 Prerequisites
 
-### 1.2 Add file to React-Native Repository Utils and start adding AL
+## 2 Add file to React-Native Repository Utils and start adding AL
 
-### 1.3 Build .apk and .app
+## 3 Build .apk and .app
 
-### 1.4 Start Appium Desktop Inspector to verify the accessibility labels
+## 4 Start Appium Desktop Inspector to verify the accessibility labels
 
-### 1.5 Start building the automation framework
+## 5 Start building the automation framework
 
-  #### 1.5.1 Add testID
+  ### 5.1 Add testID
 
-  #### 1.5.2 Add ScreenObject
+  ### 5.2 Add ScreenObject
 
-  #### 1.5.3 Add Action
+  ### 5.3 Add Action
 
   #### 1.5.4 Add Index
 
-### 1.6 Start building the E2E automaiton test
+## 6 Start building the E2E automaiton test
 
-### 1.7 Run your first test locally
+## 7 Run your first test locally
 
-### 1.8 Run your first test in Jenksin 
+## 8 Run your first test in Jenksin 
 
 
-
-### Prerequisites
+## 1 Prerequisites
 
 What things you need to install the software and how to install them
 
@@ -52,7 +50,7 @@ What things you need to install the software and how to install them
 
 ```
 
-### Add file to React-Native repository utils folder and start adding AL to react-component
+## 2 Add file to React-Native Repository Utils and start adding AL
 
 The components in the React-Native apps repository must have AL for the automation to work.
 
@@ -67,7 +65,7 @@ The components in the React-Native apps repository must have AL for the automati
 
 5. Build-up the .apk and .app following next point
 
-### Build .apk and .app
+## 3 Build .apk and .app
 
 The point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommed you to checkout Fastlane: https://docs.fastlane.tools/
 
@@ -86,7 +84,7 @@ yarn build-ios
 ```
 Up to this point the guide is bit abstract and now I will give for granted that you succeed adding AL and building the apps for automation. 
 
-### Start Appium Desktop Inspector to verify the accessibility labels
+## 4 Start Appium Desktop Inspector to verify the accessibility labels
 
 1. Start Appium Desktop and click Start Server
 2. Then click search button "Start Inspector Session"
@@ -116,20 +114,27 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 ```
 Now with the elements located, it is time to start building the automationFramework. 
 
-## Start building the automation framework
+## 5 Start building the automation framework
 
 The automationFramework folder follows a modular architecture and contains two more folders. The e2e folder is where you will safe all the e2e automation test and the screen is the framework.
 
 The screen folder has two examples and let´s look at one of them. The pageExampleLogin represent the loginPage for the app and that page has four .js files.
 
 ```
-testID.js: where AL are specfied as json
-screenObject.js = where all the components in the page like text labels, buttons, list , icons are specified
-action.js: where user actions functions are written, for instance, login
-index.js: where we export all the files of the folder
+Where AL are specfied as json:
+testID.js 
+
+Where all the components in the page like text labels, buttons, list , and icons are specified:
+screenObject.js 
+
+Where user actions functions are written:
+action.js 
+
+Where file are imported and exported:
+index.js 
 ```
 
-#### 1.5.1 Add testID
+### 5.1 Add testID
 
 The values in the json object below are the AL, which were set in the React-Native app repo. 
 
@@ -147,7 +152,7 @@ const testID = {
 
 ```
 
-#### 1.5.2 Add ScreenObject
+### 5.2 Add ScreenObject
 
 In the ScreenObject file add the elements in the page. For instance, the login page may have two input text labels and a button. The screen is the page so it is easy to verify the location when navigating from page to page. 
 
@@ -166,7 +171,7 @@ const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
 ```
 
 
-  #### 1.5.3 Add Action
+### 5.3 Add Action
 
 In the Action file write functions with the most commont actions for the page. For instance, the login will be perform serveral times so create a function for the login. 
 
@@ -220,10 +225,14 @@ export {
 
 ````
 
-### 1.6 Start building the E2E automaiton test
+## 6 Start building the E2E automaiton test
 
 ````
 ````
+
+## 7 Run your first test locally
+
+## 8 Run your first test in Jenksin
 
 ### Break down into end to end tests
 
