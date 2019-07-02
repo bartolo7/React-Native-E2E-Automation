@@ -112,6 +112,7 @@ node () {
 
         }
         finally{
+            
             kill_simulators()
         }   
 } 
