@@ -22,6 +22,22 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ### 1.5 Start building the automation framework
 
+#### 1.5.1 Add testID
+
+#### 1.5.2 Add ScreenObject
+
+#### 1.5.3 Add Action
+
+#### 1.5.4 Index
+
+### 1.6 Start building the E2E automaiton test
+
+### 1.7 Run your first test locally
+
+### 1.8 Run your first test in Jenksin 
+
+
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
