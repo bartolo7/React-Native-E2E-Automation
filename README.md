@@ -88,7 +88,7 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 
 1. Start Appium Desktop and click Start Server
 2. Then click search button "Start Inspector Session"
-3. Add desired capabilities, see two examples below.
+3. Add desired capabilities.For more information check: http://appium.io/docs/en/writing-running-appium/caps/
 4. Start Session
 5. In the Inspector you will see the hierarchy of elements and their attributes 
 
