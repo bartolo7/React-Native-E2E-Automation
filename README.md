@@ -129,9 +129,9 @@ action.js: where user actions functions are written, for instance, login
 index.js: where we export all the files of the folder
 ```
 
-Add testID
+#### 1.5.1 Add testID
 
-The values in the json object below are the AL, which were set in the automaiton repo. 
+The values in the json object below are the AL, which were set in the React-Native app repo. 
 
 ```
 const testID = {
@@ -146,6 +146,8 @@ const testID = {
 };
 
 ```
+
+
 
 ### Break down into end to end tests
 
