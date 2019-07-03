@@ -74,7 +74,7 @@ This point is a bit generic as I do not know the architecture of your React-Nati
 
 1. Add the two scripts below to the package.json in your React-Native repo:
 
-  ````
+  ```
   "build-android": "./scripts/buildAppLocal.sh android"
   "build-ios": "./scripts/buildAppLocal.sh ios"
   ```
