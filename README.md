@@ -1,10 +1,10 @@
-# {React-Native-E2E-Automation}
+# React-Native-E2E-Automation
 
 Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins.
 
 ## Acknowledgement
 
-First things first, Accessbility Labels (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. For instance, text labels, buttons, list and so on must have AL for the automation to work. You can read more here: https://facebook.github.io/react-native/docs/accessibility
+First things first, Accessbility Labels (AL) must be implemented in the React-Native apps repository in order to find the elements for automation. For instance, text labels, buttons, list, etc must have AL for the automation to work. You can read more here: https://facebook.github.io/react-native/docs/accessibility
 
 Then the IOS .app and Android .apk must be build with AL for testing purpose. The IOS .app will run in the Simulator and the Android .apk in the Emulator.
 
@@ -41,7 +41,7 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ## 1 Prerequisites
 
-What things you need to install the software and how to install them
+Software to be install.
 
 ```
 1. Yarn https://yarnpkg.com/lang/en/
@@ -70,27 +70,31 @@ The components in the React-Native apps repository must have AL for the automati
 
 ## 3 Build .apk and .app
 
-The point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommed you to checkout Fastlane: https://docs.fastlane.tools/
+This point is a bit generic as I do not know the architecture of your React-Native App. I just aim to describe how I did it in my project. I am building the .apk and .app locally by using xcodebuild and gradlew; however, I recommed you to checkout Fastlane: https://docs.fastlane.tools/
 
 1. Add the two scripts below to the package.json in your React-Native repo:
 
-   "build-android": "./scripts/buildAppLocal.sh android",
-   "build-ios": "./scripts/buildAppLocal.sh ios",
+  ````
+  "build-android": "./scripts/buildAppLocal.sh android"
+  "build-ios": "./scripts/buildAppLocal.sh ios"
+  ```
+See that the script are setting the GENERATE_AL=true too, so it can be remove from the dotenv, which it is describe in the step 2.
 
 2. Edit the script buildAppLocal.sh by adding the info <your_workspace_name> and <your_scheme_name>
 
-3. Build with .apik and .app with this command
+3. Build with .apk and .app with this command
 
 ```
 yarn build-android
 yarn build-ios
 ```
 
-Up to this point the guide is bit abstract and now I will give for granted that you succeed adding AL and building the apps for automation.
+Up to this point the guide is bit abstract and from now on I will give for granted that you succeed adding AL and building the apps for automation.
 
 ## 4 Start Appium Desktop Inspector to verify the accessibility labels
 
 1. Start Appium Desktop and click Start Server
+
 2. Then click search button "Start Inspector Session"
 3. Add desired capabilities.For more information check: http://appium.io/docs/en/writing-running-appium/caps/
 4. Start Session
@@ -339,7 +343,7 @@ yarn testIOS
 
 The Jenkinsfile is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs in the master branch and I got some errors with the IOS device. This is the Jenkins view:
 
-![Alt text](?raw=true "Title")
+![Alt text](script/appium_desktop.png?raw=true "Title")
 
 It can be improve to have 2 branch master fetching APP for release candidate and development fetching APP from master. The improvement are up to you mate!!!!
 
