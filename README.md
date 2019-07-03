@@ -22,13 +22,13 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ## 5 Start building the automation framework
 
-### 5.1 Add testID
+* ### 5.1 Add testID
 
-### 5.2 Add ScreenObject
+* ### 5.2 Add ScreenObject
 
-### 5.3 Add Action
+* ### 5.3 Add Action
 
-### 5.4 Add Index
+* ### 5.4 Add Index
 
 ## 6 Start building the E2E automaiton test
 
