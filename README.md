@@ -363,9 +363,11 @@ It can be improve by using 2 branches, one master fetching APP repo for release 
 
 ## 9 Troubleshooting
 
-* Error:  connect ECONNREFUSED 127.0.0.1:4723 Description: Appium is not running
+* Error:  connect ECONNREFUSED 127.0.0.1:4723 
+Description: Appium is not running
 
-* Error: Cant find keyboard or error sending text Description: Check whether software keyboard in the Simulator is enabled. Go to Simulator -> Hardware -> Keyboard -> Toggle Software Keyboard
+* Error: Cant find keyboard or error sending text 
+Description: Check whether software keyboard in the Simulator is enabled. Go to Simulator -> Hardware -> Keyboard -> Toggle Software Keyboard
 
 
 
