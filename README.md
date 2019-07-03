@@ -10,7 +10,7 @@ Then the IOS .app and Android .apk must be build with AL for testing purpose. Th
 
 With an .app and .apk built with AL, you can use the Appium Desktop Inspector to verify them and start writing code in the E2E framework describe below.
 
-# INDEX
+# Table of contents
 
 ## 1 Prerequisites
 
@@ -366,7 +366,6 @@ It can be improve by using 2 branches, one master fetching APP repo for release 
 * Error:  connect ECONNREFUSED 127.0.0.1:4723 Description: Appium is not running
 
 * Error: Cant find keyboard or error sending text Description: Check whether software keyboard in the Simulator is enabled. Go to Simulator -> Hardware -> Keyboard -> Toggle Software Keyboard
-
 
 
 
