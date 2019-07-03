@@ -372,7 +372,7 @@ It can be improve by using 2 branches, one master fetching APP repo for release 
 
 ## 10 Improvements
 
-The automated can be run in paralle by using Selenium grid. Check the links below:
+The automatiion can be improve by running the test in parallel with Selenium grid. Check the links below:
 
 https://appiumpro.com/editions/54
 
