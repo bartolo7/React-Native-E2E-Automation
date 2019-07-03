@@ -1,11 +1,9 @@
 import { driver } from "../../configurations/driverConfig";
 import {login, loginAction, menu} from "../screen";
-import { user, constant } from "../../utils";
+import { user } from "../../utils";
 
 
 const { user1 } = user;
-
-const { LANGUAGE } = constant;
 
 describe("Login username and password", () => {
   beforeAll(async () => {

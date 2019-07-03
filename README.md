@@ -227,7 +227,34 @@ export {
 
 ## 6 Start building the E2E automaiton test
 
+After creating the page in point 5, now it is time to start writing automatic test. In the e2e folder, you will find the folowing example. To know more about Jest and writing test, check this web: https://jestjs.io/docs/en/expect#tobevalue
+
 ```
+import { driver } from "../../configurations/driverConfig";
+import {login, loginAction, menu} from "../screen";
+import { user } from "../../utils";
+
+
+const { user1 } = user;
+
+describe("Login username and password", () => {
+  beforeAll(async () => {
+    await driver.launchApp();
+  });
+
+  it(`Login example 1`, async () => {
+    menu.tabONE().click();
+    loginAction.loginUsernamePassword(user1)
+    const view = await login.screen();
+    view.isDisplayed();
+  })
+
+  it(`Login example 2`, async () => {
+      //continue writing test 
+  });
+
+  afterAll(async () => {});
+});
 ```
 
 ## 7 Run your first test locally
