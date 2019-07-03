@@ -381,11 +381,14 @@ https://medium.com/@ar.xa.vasquez/how-to-register-an-appium-node-to-a-selenium-g
 http://appium.io/docs/en/advanced-concepts/grid/#grid-node-configuration-example-json-file
 
 
-## Authors
+### Authors
 
 - **David Bartolomé**
 
-## License
+### Contribution
+- **Vijay Arockiaraj
+
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
