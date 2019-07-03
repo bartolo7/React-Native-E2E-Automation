@@ -355,7 +355,7 @@ yarn testIOS
 
 ## 8 Run your first test in Jenksin
 
-The Jenkins file is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs to test (log in) with the app repo master branch and I got some errors with the IOS device. This is the Jenkins real view:
+The Jenkins file is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs one test, log in, with the app repo master branch and I got some errors with the IOS device. This is the Jenkins real view:
 
 ![Alt text](picture/jenkins_pipeline.png?raw=true "Title")
 
