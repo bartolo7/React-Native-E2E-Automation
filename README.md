@@ -109,6 +109,8 @@ Up to this point the guide is bit abstract and from now on I will give for grant
 
 5. In the Inspector you will see the hierarchy of elements and their attributes
 
+![Alt text](picture/structure.png?raw=true "Title")
+
 
 ```
 {
