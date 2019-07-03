@@ -1,6 +1,6 @@
 # {React-Native-E2E-Automation}
 
-Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins. 
+Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins.
 
 ## Acknowledgement
 
@@ -9,7 +9,6 @@ First things first, Accessbility Labels (AL) must be implemented in the React-Na
 Then the IOS .app and Android .apk must be build with AL for testing purpose. The IOS .app will run in the Simulator and the Android .apk in the Emulator.
 
 With an .app and .apk built with AL, you can use the Appium Desktop Inspector to verify them and start writing code in the E2E framework describe below.
-
 
 ## 1 Prerequisites
 
@@ -21,20 +20,19 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ## 5 Start building the automation framework
 
-  ### 5.1 Add testID
+### 5.1 Add testID
 
-  ### 5.2 Add ScreenObject
+### 5.2 Add ScreenObject
 
-  ### 5.3 Add Action
+### 5.3 Add Action
 
-  ### 5.4 Add Index
+### 5.4 Add Index
 
 ## 6 Start building the E2E automaiton test
 
 ## 7 Run your first test locally
 
-## 8 Run your first test in Jenksin 
-
+## 8 Run your first test in Jenksin
 
 ## 1 Prerequisites
 
@@ -79,10 +77,11 @@ The point is a bit generic as I do not know the architecture of your React-Nativ
 3. Build with .apik and .app with this command
 
 ```
-yarn build-android 
+yarn build-android
 yarn build-ios
 ```
-Up to this point the guide is bit abstract and now I will give for granted that you succeed adding AL and building the apps for automation. 
+
+Up to this point the guide is bit abstract and now I will give for granted that you succeed adding AL and building the apps for automation.
 
 ## 4 Start Appium Desktop Inspector to verify the accessibility labels
 
@@ -90,7 +89,7 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 2. Then click search button "Start Inspector Session"
 3. Add desired capabilities.For more information check: http://appium.io/docs/en/writing-running-appium/caps/
 4. Start Session
-5. In the Inspector you will see the hierarchy of elements and their attributes 
+5. In the Inspector you will see the hierarchy of elements and their attributes
 
 ```
 {
@@ -112,7 +111,8 @@ Up to this point the guide is bit abstract and now I will give for granted that 
 
 
 ```
-Now with the elements located, it is time to start building the automationFramework. 
+
+Now with the elements located, it is time to start building the automationFramework.
 
 ## 5 Start building the automation framework
 
@@ -122,21 +122,21 @@ The screen folder has two examples and let´s look at one of them. The pageExamp
 
 ```
 Where AL are specfied as json:
-testID.js 
+testID.js
 
 Where all the components in the page like text labels, buttons, list , and icons are specified:
-screenObject.js 
+screenObject.js
 
 Where user actions functions are written:
-action.js 
+action.js
 
 Where file are imported and exported:
-index.js 
+index.js
 ```
 
 ### 5.1 Add testID
 
-The values in the json object below are the AL, which were set in the React-Native app repo. 
+The values in the json object below are the AL, which were set in the React-Native app repo.
 
 ```
 const testID = {
@@ -154,10 +154,9 @@ const testID = {
 
 ### 5.2 Add ScreenObject
 
-In the ScreenObject file add the elements in the page. For instance, the login page may have two input text labels and a button. The screen is the page so it is easy to verify the location when navigating from page to page. 
+In the ScreenObject file add the elements in the page. For instance, the login page may have two input text labels and a button. The screen is the page so it is easy to verify the location when navigating from page to page.
 
-In the file, the elementUtil.js utility is used to find the elements. It contains functions to finds elements in Android an IOS, you can read more about them here: https://github.com/admc/wd/blob/master/doc/api.md 
-
+In the file, the elementUtil.js utility is used to find the elements. It contains functions to finds elements in Android an IOS, you can read more about them here: https://github.com/admc/wd/blob/master/doc/api.md
 
 ```
 const screen = () => elementUtil.getElementByAccessibilityId(SCREEN);
@@ -170,10 +169,9 @@ const btnLogin = () => elementUtil.getElementByAccessibilityId(button.LOGIN);
 
 ```
 
-
 ### 5.3 Add Action
 
-In the Action file write functions with the most commont actions for the page. For instance, the login will be perform serveral times so create a function for the login. 
+In the Action file write functions with the most commont actions for the page. For instance, the login will be perform serveral times so create a function for the login.
 
 ```
 import screenObject from './screenObject';
@@ -197,7 +195,7 @@ export default { loginUsernamePassword };
 
 ### 5.4 Add Index
 
-Import and export testID, screenObject and action for each page in the index.js file inside the page folder. See example below: 
+Import and export testID, screenObject and action for each page in the index.js file inside the page folder. See example below:
 
 ```
 import testID from './testID';
@@ -208,9 +206,9 @@ export { testID, screenObject, action };
 
 ```
 
-Import and export 
+Import and export
 
-In the screen folder, there is index.js file to import and export all the page folder, see example below. Hence, they can be accessed from the e2e folder where the automaiton test are written. 
+In the screen folder, there is index.js file to import and export all the page folder, see example below. Hence, they can be accessed from the e2e folder where the automaiton test are written.
 
 ```
 import { screenObject as login, action as loginAction } from './pageExampleLogin';
@@ -250,7 +248,7 @@ describe("Login username and password", () => {
   })
 
   it(`Login example 2`, async () => {
-      //continue writing test 
+      //continue writing test
   });
 
   afterAll(async () => {});
@@ -258,6 +256,26 @@ describe("Login username and password", () => {
 ```
 
 ## 7 Run your first test locally
+
+In the utils folder, you will find the constant.js file where you will specify the path for .apk and .app. So Appium can fetch them to run the automated test.
+
+```
+
+```
+
+In the configuration folder, you will find the capabilityConfig.js file. In that file there is the next function:
+
+```
+// Write down your the React App folder name '../example-project-folder'
+const localRootDir = path.resolve('../example-project-folder');
+
+/* The function will fetch the apk or app path locally or from the Jenkins workspace if the env variable is created **/
+export function buildAppPath(appPath) {
+  const dir = !process.env.WORKSPACE ? localRootDir : process.env.PIPELINE_ROOT_DIR;
+  const finalPath = `${dir}/${appPath}`;
+  return finalPath;
+}
+```
 
 At this point, you should be ready to run the first test locally. Hence, cd into the project and write the next commands in the console:
 
@@ -272,39 +290,42 @@ yarn
 ```
 yarn runAndroid
 ```
+
 or
 
 ```
 yarn runIOS
 ```
-Tip: If you run into issue, check that at least there is one device created in Anddroid Studio or that the ANDROID_HOME=/Users/Jerry/Library/Android/sdk is exported. 
 
-After running both command, the Emulator and Simulator must be up and running. 
+Tip: If you run into issue, check that at least there is one device created in Anddroid Studio or that the ANDROID_HOME=/Users/Jerry/Library/Android/sdk is exported.
+
+After running both command, the Emulator and Simulator must be up and running.
 
 3. Run the test for Android or IOS.
 
-Run a single test for Android by pass the test name to the env variable TEST 
-
-```
-TEST="pipeLine" yarn testAndroid:singleTest
-```
-Run all the test Anroid 
+Run a single test for Android by pass the test name to the env variable TEST
 
 ```
 TEST="pipeLine" yarn testAndroid:singleTest
 ```
 
-Run a single test for Android by pass the test name to the env variable TEST 
+Run all the test Anroid
 
 ```
 TEST="pipeLine" yarn testAndroid:singleTest
 ```
+
+Run a single test for Android by pass the test name to the env variable TEST
+
+```
+TEST="pipeLine" yarn testAndroid:singleTest
+```
+
 Run all the test for Android
 
 ```
 yarn testAndroid
 ```
-
 
 ## 8 Run your first test in Jenksin
 
@@ -319,7 +340,6 @@ Give an example
 ```
 until finished
 ```
-
 
 ### And coding style tests
 
