@@ -386,6 +386,7 @@ http://appium.io/docs/en/advanced-concepts/grid/#grid-node-configuration-example
 
 ### Contribution
 - **Vijay Arockiaraj**
+- **Kabilan Surendran**
 
 ### License
 
