@@ -95,7 +95,12 @@ Up to this point the guide is bit abstract and from now on I will give for grant
 
 1. Start Appium Desktop and click Start Server
 
+![Alt text](picture/appium_desktop.png?raw=true "Title")
+
 2. Then click search button "Start Inspector Session"
+
+![Alt text](picture/server_running.png?raw=true "Title")
+
 3. Add desired capabilities.For more information check: http://appium.io/docs/en/writing-running-appium/caps/
 4. Start Session
 5. In the Inspector you will see the hierarchy of elements and their attributes
@@ -341,11 +346,11 @@ yarn testIOS
 
 ## 8 Run your first test in Jenksin
 
-The Jenkinsfile is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs in the master branch and I got some errors with the IOS device. This is the Jenkins view:
+The Jenkins file is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs to test (log in) with the app repo master branch and I got some errors with the IOS device. This is the Jenkins real view:
 
 ![Alt text](picture/jenkins_pipeline.png?raw=true "Title")
 
-It can be improve to have 2 branch master fetching APP for release candidate and development fetching APP from master. The improvement are up to you mate!!!!
+It can be improve by using 2 branches, one master fetching APP repo for release candidate and development fetching APP from master. The improvement are up to you mate!!!!
 
 
 ## 9 Improvements
