@@ -34,6 +34,8 @@ With an .app and .apk built with AL, you can use the Appium Desktop Inspector to
 
 ## 8 Run your first test in Jenksin
 
+## 9 Improvements
+
 ## 1 Prerequisites
 
 What things you need to install the software and how to install them
@@ -260,6 +262,9 @@ describe("Login username and password", () => {
 In the utils folder, you will find the constant.js file where you will specify the path for .apk and .app. So Appium can fetch them to run the automated test.
 
 ```
+const IOS_APP_PATH = "THIS PATH MUST BE FIXED POINTING TO .APP";
+
+const IOS_IPA_PATH = "THIS PATH MUST BE FIXED POINTING TO .IPA";
 
 ```
 
@@ -269,7 +274,7 @@ In the configuration folder, you will find the capabilityConfig.js file. In that
 // Write down your the React App folder name '../example-project-folder'
 const localRootDir = path.resolve('../example-project-folder');
 
-/* The function will fetch the apk or app path locally or from the Jenkins workspace if the env variable is created **/
+/* The function will fetch the apk or app path locally or from the Jenkins workspace if the env variable WORKSPACE is created **/
 export function buildAppPath(appPath) {
   const dir = !process.env.WORKSPACE ? localRootDir : process.env.PIPELINE_ROOT_DIR;
   const finalPath = `${dir}/${appPath}`;
@@ -312,42 +317,38 @@ TEST="pipeLine" yarn testAndroid:singleTest
 Run all the test Anroid
 
 ```
-TEST="pipeLine" yarn testAndroid:singleTest
+TEST="pipeLine" yarn testAndroid
 ```
 
 Run a single test for Android by pass the test name to the env variable TEST
 
 ```
-TEST="pipeLine" yarn testAndroid:singleTest
+TEST="pipeLine" yarn testIOS:singleTest
 ```
 
-Run all the test for Android
+Run all the test for IOS
 
 ```
-yarn testAndroid
+yarn testIOS
 ```
 
 ## 8 Run your first test in Jenksin
 
-### Break down into end to end tests
+The Jenkinsfile is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs in the master branch and I got some errors with the IOS device. This is the Jenkins view:
 
-Explain what these tests test and why
+It can be improve to have 2 branch master fetching APP for release candidate and development fetching APP from master. The improvement are up to you mate!!!!
 
-```
-Give an example
-```
 
-```
-until finished
-```
+## 9 Improvements
 
-### And coding style tests
+The automated can be run in paralle by using Selenium grid. Check the links below:
 
-Explain what these tests test and why
+https://appiumpro.com/editions/54
 
-```
-Give an example
-```
+https://medium.com/@ar.xa.vasquez/how-to-register-an-appium-node-to-a-selenium-grid-546f08aadc66
+
+http://appium.io/docs/en/advanced-concepts/grid/#grid-node-configuration-example-json-file
+
 
 ## Authors
 
