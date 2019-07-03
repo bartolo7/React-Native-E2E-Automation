@@ -102,8 +102,13 @@ Up to this point the guide is bit abstract and from now on I will give for grant
 ![Alt text](picture/server_running.png?raw=true "Title")
 
 3. Add desired capabilities.For more information check: http://appium.io/docs/en/writing-running-appium/caps/
+
+![Alt text](picture/Add_Cap.png?raw=true "Title")
+
 4. Start Session
+
 5. In the Inspector you will see the hierarchy of elements and their attributes
+
 
 ```
 {
