@@ -336,6 +336,8 @@ yarn testIOS
 
 The Jenkinsfile is a demo to provide you some guidance. It requires extra work and fine-tunning as it only runs in the master branch and I got some errors with the IOS device. This is the Jenkins view:
 
+![Alt text](picture/1620484_10153492120660959_828680523637278841_n.jpg?raw=true "Title")
+
 It can be improve to have 2 branch master fetching APP for release candidate and development fetching APP from master. The improvement are up to you mate!!!!
 
 
