@@ -1,6 +1,6 @@
 # {React-Native-E2E-Automation}
 
-Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins.
+Step by step guide to implement E2E Automation for React-Native apps with Javascript(ES6), Appium, Jest and Jenkins. 
 
 ## Acknowledgement
 
@@ -258,6 +258,53 @@ describe("Login username and password", () => {
 ```
 
 ## 7 Run your first test locally
+
+At this point, you should be ready to run the first test locally. Hence, cd into the project and write the next commands in the console:
+
+1. To install all the dependencies
+
+```
+yarn
+```
+
+2. Depending which device you want to check, start Android Emulator or IOS Simulator:
+
+```
+yarn runAndroid
+```
+or
+
+```
+yarn runIOS
+```
+Tip: If you run into issue, check that at least there is one device created in Anddroid Studio or that the ANDROID_HOME=/Users/Jerry/Library/Android/sdk is exported. 
+
+After running both command, the Emulator and Simulator must be up and running. 
+
+3. Run the test for Android or IOS.
+
+Run a single test for Android by pass the test name to the env variable TEST 
+
+```
+TEST="pipeLine" yarn testAndroid:singleTest
+```
+Run all the test Anroid 
+
+```
+TEST="pipeLine" yarn testAndroid:singleTest
+```
+
+Run a single test for Android by pass the test name to the env variable TEST 
+
+```
+TEST="pipeLine" yarn testAndroid:singleTest
+```
+Run all the test for Android
+
+```
+yarn testAndroid
+```
+
 
 ## 8 Run your first test in Jenksin
 
