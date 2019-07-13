@@ -246,7 +246,7 @@ export {
 
 ```
 
-## 6 Start building the E2E automaiton test
+## 6 Start building the E2E automation test
 
 After creating the page in point 5, now it is time to start writing automatic test. In the e2e folder, you will find the folowing example. To know more about Jest and writing test, check this web: https://jestjs.io/docs/en/expect#tobevalue
 
