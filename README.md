@@ -373,7 +373,7 @@ Description: Check whether software keyboard in the Simulator is enabled. Go to 
 
 ## 10 Improvements
 
-The automatiion can be improve by running the test in parallel with Selenium grid. Check the links below:
+The automation can be improve by running the test in parallel with Selenium grid. Check the links below:
 
 https://appiumpro.com/editions/54
 
