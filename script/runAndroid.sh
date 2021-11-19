@@ -14,7 +14,7 @@ INSTALLED=$(adb shell pm list packages | grep com.example.app)
 # Remove app 
 if [ ! -z "$INSTALLED" ]; then
    echo "Removing app"
-   adb uninstall com.test.appp
+   adb uninstall com.example.app
 else
    echo "There is not app installed"
 fi
